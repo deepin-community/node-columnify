@@ -1,0 +1,16 @@
+Description: fix for babel7
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: no
+Last-Update: 2020-05-11
+
+--- a/package.json
++++ b/package.json
+@@ -11,7 +11,7 @@
+   },
+   "babel": {
+     "presets": [
+-      "es2015"
++      "@babel/preset-env"
+     ]
+   },
+   "author": "Tim Oxley",

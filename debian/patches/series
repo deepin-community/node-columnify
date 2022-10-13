@@ -1,0 +1,4 @@
+use-wcwidth.js.patch
+use-babeljs.patch
+disable-failing-test.patch
+fix-for-babel7.diff

@@ -1,0 +1,12 @@
+Description: Use babeljs
+ babel is babeljs in debian
+--- a/Makefile
++++ b/Makefile
+@@ -4,6 +4,6 @@
+ prepublish: all
+ 
+ columnify.js: index.js package.json
+-	babel index.js > columnify.js
++	babeljs index.js > columnify.js
+ 
+ .PHONY: all prepublish

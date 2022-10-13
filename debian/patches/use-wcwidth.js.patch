@@ -1,0 +1,14 @@
+Description: use packaged version
+Author: Pirate Praveen <praveen@debian.org>
+Forwarded: not-needed
+Last-Update: 2018-06-07
+
+--- node-columnify-1.5.4.orig/width.js
++++ node-columnify-1.5.4/width.js
+@@ -1,5 +1,5 @@
+ var stripAnsi = require('strip-ansi')
+-var wcwidth = require('wcwidth')
++var wcwidth = require('wcwidth.js')
+ 
+ module.exports = function(str) {
+   return wcwidth(stripAnsi(str))

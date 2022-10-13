@@ -1,0 +1,35 @@
+Source: node-columnify
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Priority: optional
+Build-Depends: debhelper-compat (= 12)
+ , node-babel7
+ , node-strip-ansi <!nocheck>
+ , node-tape <!nocheck>
+ , node-wcwidth.js <!nocheck>
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-columnify
+Vcs-Git: https://salsa.debian.org/js-team/node-columnify.git
+Homepage: https://github.com/timoxley/columnify
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-columnify
+Architecture: all
+Depends: ${misc:Depends}
+ , node-strip-ansi
+ , node-wcwidth.js
+ , nodejs
+Description: Render data in text columns with in-column text-wrap
+ Create text-based columns suitable for console output from objects or arrays
+ of objects.
+ .
+ Columns are automatically resized to fit the content of the largest cell.
+ Each cell will be padded with spaces to fill the available space and ensure
+ column contents are left-aligned.
+ .
+ Designed to handle sensible wrapping in npm search results.
+ .
+ Node.js is an event-based server-side JavaScript engine.

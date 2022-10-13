@@ -1,0 +1,32 @@
+node-columnify (1.5.4-3) unstable; urgency=medium
+
+  * Team upload
+  * Update debian/watch
+  * Build with babel7
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 11 May 2020 08:29:34 +0200
+
+node-columnify (1.5.4-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Use pkg-js-tools auto test & install
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Update upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 30 Apr 2020 10:26:47 +0200
+
+node-columnify (1.5.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #900955)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 07 Jun 2018 15:43:53 +0530
